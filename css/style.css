@@ -1160,7 +1160,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .knowledge__img-wrap {
-	margin-top: -36px;
+	margin-top: 0;
 }
 
 .middle-title {

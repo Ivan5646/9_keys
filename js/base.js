@@ -57,5 +57,29 @@ $(document).ready(function(){
 	$('#close2RurForm').on('click', function() {
 		$('#formOverlay2').fadeOut();
 		$('#payment2FormRUR').fadeOut();
+    })
+
+    // open rur form
+    $('#cardBtn3').on('click', function() {
+        $('#formOverlay3').fadeIn();
+        $('#payment3FormRUR').fadeIn();
+    })
+
+    // open ntz form
+    $('#ntzdBtn3').on('click', function() {
+        $('#formOverlay3').fadeIn();
+        $('#payment3FormNTZ').fadeIn();
+	})
+
+	// close ntz form
+	$('#close3NTZForm').on('click', function() {
+		$('#formOverlay3').fadeOut();
+		$('#payment3FormNTZ').fadeOut();
+	})
+	
+	// close rur form
+	$('#close3RurForm').on('click', function() {
+		$('#formOverlay3').fadeOut();
+		$('#payment3FormRUR').fadeOut();
 	})
 })

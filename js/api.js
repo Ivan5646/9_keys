@@ -105,13 +105,13 @@ function addOrder2(suffix) {
 
 
 function addOrder3(suffix) {
-	document.getElementById("send_rur2").disabled = true;
-	document.getElementById("send_ntz2").disabled = true;
+	document.getElementById("send_rur3").disabled = true;
+	document.getElementById("send_ntz3").disabled = true;
 	var xhr = new XMLHttpRequest();
 	var url = "/";
-	var name = document.getElementById("userName2"+suffix);
-	var phone = document.getElementById("userPhone2"+suffix);
-	var email = document.getElementById("userEmail2"+suffix);
+	var name = document.getElementById("userName3"+suffix);
+	var phone = document.getElementById("userPhone3"+suffix);
+	var email = document.getElementById("userEmail3"+suffix);
 
 	xhr.open("POST", url, true);
 	xhr.setRequestHeader("Content-Type", "application/json");
@@ -119,8 +119,8 @@ function addOrder3(suffix) {
 		if (xhr.readyState === 4 && xhr.status === 200) {
 			var json = JSON.parse(xhr.responseText);
 			if(json.startsWith('ERROR') ) {
-				document.getElementById("send_rur2").disabled = false;
-				document.getElementById("send_ntz2").disabled = false;
+				document.getElementById("send_rur3").disabled = false;
+				document.getElementById("send_ntz3").disabled = false;
 				alert(json)
 			}
 			else {

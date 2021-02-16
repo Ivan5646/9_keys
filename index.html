@@ -1,7 +1,6 @@
 {% set item = data['items']['merchant-effectivecommunication9keys']['products'][0] %}
 {% set ticket1 = data['items']['merchant-effectivecommunication9keys']['ticket1'] %}
 {% set ticket2 = data['items']['merchant-effectivecommunication9keys']['ticket2'] %}
-
 {% set ticket3 = data['items']['merchant-effectivecommunication9keys']['ticket3'] %}
 
 <!DOCTYPE html>
@@ -231,7 +230,7 @@
 
 				<!-- PAYMENT BLOCK -->
 				<div class="payment" id="paymentBlock">
-					<div class="payment__header">
+					<!-- div class="payment__header">
 						<span class="payment__text">Стоимость тарифа «Старт»:</span>
 						<span class="payment__amount">{{ticket3['price']}} ₽</span>
 					</div>
@@ -250,7 +249,7 @@
 							<img src="img/ntz-logo.svg" alt="visa">
 						</div>
 					</div>
-					<div class="payment__inner"></div>
+					<div class="payment__inner"></div -->
 
 					<div class="payment__header">
 						<span class="payment__text">Стоимость тарифа «Стандарт»:</span>
@@ -316,9 +315,6 @@
 			data-price="{{ticket2['price']}}" data-old_price="{{ticket2['old_price']}}" data-name="{{ticket2['name']}}"
 			data-image="{{ticket2['image']}}">
 
-		<input type="hidden" name="item_number" id="{{ticket3['code']}}" class="items_quantity3" value=1 min=1 disabled
-			data-price="{{ticket3['price']}}" data-old_price="{{ticket3['old_price']}}" data-name="{{ticket3['name']}}"
-			data-image="{{ticket3['image']}}">
 		<!-- GOODS BLOCK ! IMPORTANT-->
 
 		<!-- POLICY BLOCK -->
@@ -336,7 +332,6 @@
 
 		<div class="form__overlay" id="formOverlay"></div>
 		<div class="form__overlay" id="formOverlay2"></div>
-		<div class="form__overlay" id="formOverlay3"></div>
 
 		<!-- RUR FORM -->
 		<div class="form__wrap" id="paymentFormRUR">
@@ -525,7 +520,7 @@
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/base.js"></script>
-	<script src="js/api.js"></script>
+	<script src="js/api.js?v=0.001"></script>
 
 </body>
 
